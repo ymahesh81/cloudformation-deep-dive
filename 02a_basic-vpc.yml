@@ -13,7 +13,7 @@ Resources:
   subnetA:
     Type: AWS::EC2::Subnet
     Properties:
-      AvailabilityZone: us-east-2a
+      AvailabilityZone: us-east-1a
       CidrBlock: 10.0.0.0/24
       MapPublicIpOnLaunch: true
       VpcId:
@@ -27,7 +27,7 @@ Resources:
   subnetB:
     Type: AWS::EC2::Subnet
     Properties:
-      AvailabilityZone: us-east-2b
+      AvailabilityZone: us-east-1b
       CidrBlock: 10.0.1.0/24
       MapPublicIpOnLaunch: true
       VpcId: !Ref Vpc # short form reference
